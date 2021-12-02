@@ -88,14 +88,21 @@ namespace whileConsoleApp_1
             int cift = 0;
             do
             {
-                if (i % 2 == 0)
-                {
-                    cift += i;
-                }
-                else
-                {
-                    tek += i;
-                }
+                // if ile
+                /*
+                 if (i % 2 == 0)
+                 {
+                     cift += i;
+                 }
+                 else
+                 {
+                     tek += i;
+                 }
+                */
+                cift = i % 2 == 0 ? cift += i :cift+0 ;
+                tek = i % 2 != 0 ? tek += i : tek+0;
+
+
                 Console.WriteLine(i % 2 == 0 ? i + " : Çift Sayı"  : i + " : Tek Sayı") ;
                
                
