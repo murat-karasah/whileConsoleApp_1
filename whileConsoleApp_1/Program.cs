@@ -76,9 +76,11 @@ namespace whileConsoleApp_1
                 }
                 else
                 {
-                    Console.WriteLine($"Doğru Tahmin... {i}.Tahminde buldunuz");
+                    Console.WriteLine($"Doğru Tahmin... {i}.Tahminde buldunuz!");
                 }
             }
+
+            //
 
         }
     }
