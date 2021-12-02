@@ -33,7 +33,7 @@ namespace whileConsoleApp_1
 
 
             //While Şifre Giriş Uygulaması
-
+            /*
             string pass = "1234";
             int i = 5;
             while (i!=0)
@@ -58,6 +58,28 @@ namespace whileConsoleApp_1
                     break;
                 }
             }
+            */
+            // Random Sayı Oluşturma
+
+            Random sayiuret = new Random();
+            int uretilensayi = sayiuret.Next(1, 10);
+            int enterNum=0;
+            int i=0;
+            while (enterNum != uretilensayi)
+            {
+                Console.WriteLine("Lütfen 0-10 arasında bir değer giriniz:");
+                enterNum = Convert.ToInt32(Console.ReadLine());
+                i++;
+                if (enterNum!=uretilensayi)
+                {
+                    Console.WriteLine("Yanlış Tahimn");
+                }
+                else
+                {
+                    Console.WriteLine($"Doğru Tahmin... {i}.Tahminde buldunuz");
+                }
+            }
+
         }
     }
 }
