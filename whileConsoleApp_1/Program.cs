@@ -59,8 +59,9 @@ namespace whileConsoleApp_1
                 }
             }
             */
-            // Random Sayı Oluşturma
 
+            // Random Sayı Oluşturma
+            /*
             Random sayiuret = new Random();
             int uretilensayi = sayiuret.Next(1, 10);
             int enterNum=0;
@@ -79,8 +80,28 @@ namespace whileConsoleApp_1
                     Console.WriteLine($"Doğru Tahmin... {i}.Tahminde buldunuz!");
                 }
             }
+            */
 
-            //
+            //do-while uygulaması
+            int i = 1;
+            int tek = 0;
+            int cift = 0;
+            do
+            {
+                if (i % 2 == 0)
+                {
+                    cift += i;
+                }
+                else
+                {
+                    tek += i;
+                }
+                Console.WriteLine(i % 2 == 0 ? i + " : Çift Sayı"  : i + " : Tek Sayı") ;
+               
+               
+                i++;
+            } while (i<=100);
+            Console.WriteLine($"Çift Sayıların Toplamı : {cift}\nTek Sayıların Toplamı : {tek}");
 
         }
     }
