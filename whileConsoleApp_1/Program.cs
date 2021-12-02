@@ -6,16 +6,33 @@ namespace whileConsoleApp_1
     {
         static void Main(string[] args)
         {
-            /*  for (int i = 1; i < 10; i++)
+
+            //for uygulama
+            /*
+             for (int i = 1; i < 10; i++)
               {
                   Console.WriteLine(i);
-              }*/
-            /* int i = 3;
+              }
+            
+             */
+
+
+
+            //While uygulama
+            /*
+             
+             int i = 3;
              while (i>=0)
              {
                  Console.WriteLine(i);
                  i--;
-             }*/
+             }
+            
+             */
+
+
+
+            //While Şifre Giriş Uygulaması
 
             string pass = "1234";
             int i = 5;
@@ -33,9 +50,7 @@ namespace whileConsoleApp_1
                     else
                     {
                         Console.WriteLine("Girilen Şifre Yanlış Kalan Hakkınız" + i);
-
                     }
-
                 }
                 else
                 {
@@ -43,8 +58,6 @@ namespace whileConsoleApp_1
                     break;
                 }
             }
-
-
         }
     }
 }
